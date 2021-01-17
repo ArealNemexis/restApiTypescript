@@ -10,4 +10,4 @@
 ## PARA ACESSAR A APLICAÇÃO
 
 ### no navegador ou cliente http(ex: postman)
-> localhost:<porta-linkada>
+> localhost:porta-linkada
