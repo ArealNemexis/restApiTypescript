@@ -1,16 +1,13 @@
 import express from 'express';
-import {Request, Response} from 'express';
+import { router } from './routes';
 
 const app = express();
 const PORT = 3000;
 
+app.use(express.json());
+app.use(router);
 
-app.get('/', (req: Request, res: Response) =>{
-    return res.send('oi');
+
+app.listen(PORT, ()=>{
+    console.log(`app listen on port ${PORT}`);
 });
-
-app.get('/tchau', (req: Request, res: Response) =>{
-    return res.send('oi/tchau');
-});
-
-app.listen(PORT);
